@@ -1,5 +1,5 @@
 .header {
-  background: url("../assets/headerIMG.jpg") no-repeat;
+  background: url("assets/headerIMG.jpg") no-repeat;
   height: 767px;
   background-size: 100%;
 }
@@ -58,7 +58,7 @@
   object-fit: fill;
 }
 .backGr {
-  background-image: linear-gradient(rgba(102, 46, 28, 0.6), rgba(102, 46, 28, 0.6)), url('../assets/backgr.png');
+  background-image: linear-gradient(rgba(102, 46, 28, 0.6), rgba(102, 46, 28, 0.6)), url('assets/backgr.png');
   background-position: center;
   background-size: contain;
 }
@@ -102,8 +102,8 @@
   width: 114px;
   height: 107px;
   background-color: #AF4425;
-  -webkit-mask: url("../assets/icons/paw.svg") no-repeat center;
-  mask: url("../assets/icons/paw.svg") no-repeat center;
+  -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
+  mask: url("assets/icons/paw.svg") no-repeat center;
 }
 .backGr .aboutUs .photoForBlock {
   margin: 45px 0 60px -11%;
@@ -154,8 +154,8 @@
   width: 114px;
   height: 107px;
   background-color: #AF4425;
-  -webkit-mask: url("../assets/icons/dog.svg") no-repeat center;
-  mask: url("../assets/icons/dog.svg") no-repeat center;
+  -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
+  mask: url("assets/icons/dog.svg") no-repeat center;
 }
 .backGr .ourGoods .awards .mirror p {
   margin-left: 30%;
