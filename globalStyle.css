@@ -77,16 +77,40 @@ body {
   background: #FF922D;
 }
 .navbar .nav .iconsHeader {
-  margin-top: 13px;
-}
-.navbar .nav .iconsHeader .mobile {
-  font-size: 25px;
+  height: 80px;
+  display: flex;
+  align-items: center;
   color: #EBDCB2;
+  flex-wrap: nowrap;
+  font-size: 5px;
 }
 .navbar .nav .iconsHeader .cart {
   justify-content: start;
-  font-size: 25px;
-  color: #EBDCB2;
+}
+@media (min-width: 576px) {
+  .navbar .nav .iconsHeader {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .nav .iconsHeader {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .nav .iconsHeader {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .nav .iconsHeader {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1400px) {
+  .navbar .nav .iconsHeader {
+    font-size: 25px;
+  }
 }
 .footer {
   height: 618px;

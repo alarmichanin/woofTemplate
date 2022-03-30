@@ -75,17 +75,38 @@ html, body {
     }
 
     .iconsHeader {
-      margin-top: 13px;
-
-      .mobile {
-        font-size: 25px;
-        color: @thirdColor;
-      }
+      height: 80px;
+      display: flex;
+      align-items: center;
+      color: @thirdColor;
+      flex-wrap: nowrap;
+      font-size: 5px;
 
       .cart {
         justify-content: start;
+      }
+      @media (min-width: 576px) {
+        font-size: 10px;
+      }
+
+      // Medium devices (tablets, 768px and up)
+      @media (min-width: 768px) {
+        font-size: 15px;
+      }
+
+      // Large devices (desktops, 992px and up)
+      @media (min-width: 992px) {
+        font-size: 20px;
+      }
+
+      // X-Large devices (large desktops, 1200px and up)
+      @media (min-width: 1200px) {
         font-size: 25px;
-        color: @thirdColor;
+      }
+
+      // XX-Large devices (larger desktops, 1400px and up)
+      @media (min-width: 1400px) {
+        font-size: 25px;
       }
     }
   }
