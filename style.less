@@ -15,423 +15,418 @@ body {
 //}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .header {
-    background: url("assets/headerIMG.jpg") no-repeat;
-    height: 695px;
+//@media (min-width: 768px) {
+//  .header {
+//    background: url("assets/headerIMG.jpg") no-repeat;
+//    height: 695px;
+//    background-size: 100%;
+//
+//    .ellipse {
+//      height: 58vh;
+//      width: 55vw;
+//      margin-top: 80px;
+//      background: @thirdColor;
+//      border-radius: 0 0 90% 0;
+//      color: @mainColor;
+//
+//      .firstInfo {
+//        margin-left: 14%;
+//
+//        .woof {
+//          margin-top: 75px;
+//          font-weight: bold;
+//          font-size: 60px;
+//        }
+//
+//        .motto {
+//          margin-top: 15px;
+//          font-size: 42px;
+//        }
+//
+//        .buyNow {
+//          display: flex;
+//          justify-content: start;
+//          align-items: start;
+//          width: 100%;
+//          background: @forthColor;
+//          border: none;
+//          font-size: 36px;
+//          font-weight: bold;
+//          color: @thirdColor;
+//          margin: 20px 0 125px 0;
+//          padding-bottom: 10px;
+//          line-height: 0.81;
+//          white-space: nowrap;
+//        }
+//      }
+//    }
+//  }
+//
+//  .ourPartners {
+//    background: @mainColor;
+//
+//    .headerOfPartner {
+//      margin: 70px 0 45px 0;
+//      text-align: center;
+//      font-size: 64px;
+//      font-weight: bold;
+//      color: @forthColor;
+//    }
+//
+//    .logos {
+//      margin-bottom: 90px;
+//
+//      .partner {
+//        display: flex;
+//        justify-content: center;
+//        align-items: center;
+//
+//        img {
+//          object-fit: fill;
+//        }
+//      }
+//    }
+//  }
+//
+//  .aboutUs {
+//    padding: 143px 0 100px 0;
+//    position: relative;
+//    height: 890px;
+//
+//    .blocks {
+//      position: absolute;
+//      left: 5vw;
+//      background-color: #EBDCB2;
+//      border-radius: 65px;
+//      z-index: 0;
+//      text-align: right;
+//
+//      p {
+//        color: @mainColor;
+//      }
+//
+//      .textPart {
+//        padding: 120px 50px 0 0;
+//
+//        .headerOfArticle {
+//          font-weight: bold;
+//          font-size: 24px;
+//        }
+//
+//        .article {
+//          padding-top: 21px;
+//          font-size: 18px;
+//        }
+//      }
+//
+//      .awards {
+//        padding: 55px 50px 120px 310px;
+//        display: flex;
+//        justify-content: space-between;
+//
+//        p {
+//          font-size: 24px;
+//          font-weight: bold;
+//          text-align: center;
+//        }
+//
+//        .paw {
+//          width: 114px;
+//          height: 107px;
+//          background-color: @secondColor;
+//          -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
+//          mask: url("assets/icons/paw.svg") no-repeat center;
+//        }
+//      }
+//
+//    }
+//
+//    .photoForBlock {
+//      position: absolute;
+//      right: 20vw;
+//      z-index: 1;
+//
+//      img {
+//        padding-top: 7%;
+//        border-radius: 145px;
+//        height: 530px;
+//      }
+//    }
+//  }
+//
+//  .ourGoods {
+//    margin-bottom: 169px;
+//    position: relative;
+//    height: 675px;
+//
+//    .blocks {
+//      position: absolute;
+//      background-color: @thirdColor;
+//      border-radius: 65px;
+//      z-index: 0;
+//      text-align: left;
+//      padding: 0 35vw 0 0;
+//    }
+//
+//    p {
+//      color: @mainColor;
+//    }
+//
+//    .textPart {
+//      padding: 120px 0 0 7vw;
+//
+//      .headerOfArticle {
+//        font-weight: bold;
+//        font-size: 36px;
+//      }
+//
+//      .article {
+//        padding-top: 21px;
+//        font-size: 24px;
+//      }
+//    }
+//
+//    .awards {
+//      padding: 55px 0 120px 7vw;
+//
+//
+//      p {
+//        font-size: 24px;
+//        font-weight: bold;
+//        text-align: start;
+//        margin-left: 18%;
+//      }
+//
+//      .dog {
+//        width: 114px;
+//        height: 107px;
+//        background-color: @secondColor;
+//        -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
+//        mask: url("assets/icons/dog.svg") no-repeat center;
+//      }
+//
+//      .mirror {
+//        p {
+//          margin-left: 30%;
+//        }
+//
+//        .dog {
+//          transform: scale(-1, 1);
+//        }
+//
+//      }
+//    }
+//
+//    .photoForBlock {
+//      position: absolute;
+//      left: 47vw;
+//      z-index: 1;
+//
+//      img {
+//        padding-top: 7%;
+//        border-radius: 145px;
+//        height: 570px;
+//      }
+//    }
+//  }
+//
+//  .weAreSelling {
+//    background: @thirdColor;
+//    border-radius: 115px;
+//    margin-top: 173px;
+//    margin-bottom: 152px;
+//
+//    .goods {
+//      .ourGoodsBtn {
+//        background: @forthColor;
+//        color: @thirdColor;
+//        height: 100px;
+//        width: 100%;
+//        border-radius: 50px;
+//        border: none;
+//        margin: 80px 0 120px 0;
+//        font-size: 36px;
+//        font-weight: bold;
+//      }
+//
+//      .headerOfGoods {
+//        margin: 120px 0 60px 0;
+//        font-size: 64px;
+//        font-weight: bold;
+//        text-align: center;
+//        color: @mainColor;
+//      }
+//
+//      .line {
+//        margin-top: 40px;
+//
+//        img {
+//          width: 100%;
+//          height: 100%;
+//          object-fit: cover;
+//        }
+//
+//        .nameOfGood {
+//          text-align: center;
+//          color: @mainColor;
+//          margin-top: 25px;
+//          font-size: 48px;
+//        }
+//
+//        .photo {
+//          border-radius: 85px;
+//        }
+//      }
+//    }
+//  }
+//}
+
+// Large devices (desktops, 992px and up)
+.header {
+  background: url("assets/headerIMG.jpg") no-repeat;
+  background-position-x: 55%;
+  height: 700px;
+  @media (min-width: 576px) {
+    height: 767px;
+    background-position-x: 50%;
+  }
+  @media (min-width: 768px) {
+    background-position-x: 47%;
+  }
+  @media (min-width: 992px) {
     background-size: 100%;
-
-    .ellipse {
-      height: 58vh;
-      width: 55vw;
-      margin-top: 80px;
-      background: @thirdColor;
-      border-radius: 0 0 90% 0;
-      color: @mainColor;
-
-      .firstInfo {
-        margin-left: 14%;
-
-        .woof {
-          margin-top: 75px;
-          font-weight: bold;
-          font-size: 60px;
-        }
-
-        .motto {
-          margin-top: 15px;
-          font-size: 42px;
-        }
-
-        .buyNow {
-          display: flex;
-          justify-content: start;
-          align-items: start;
-          width: 100%;
-          background: @forthColor;
-          border: none;
-          font-size: 36px;
-          font-weight: bold;
-          color: @thirdColor;
-          margin: 20px 0 125px 0;
-          padding-bottom: 10px;
-          line-height: 0.81;
-          white-space: nowrap;
-        }
-      }
-    }
+    //height: 75vh;
+  }
+  @media (min-width: 1200px) {
+    height: 800px;
+  }
+  @media (min-width: 1400px) {
+    height: 1000px;
   }
 
-  .ourPartners {
-    background: @mainColor;
-
-    .headerOfPartner {
-      margin: 70px 0 45px 0;
-      text-align: center;
-      font-size: 64px;
-      font-weight: bold;
-      color: @forthColor;
-    }
-
-    .logos {
-      margin-bottom: 90px;
-
-      .partner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          object-fit: fill;
-        }
-      }
-    }
-  }
-
-  .aboutUs {
-    padding: 143px 0 100px 0;
-    position: relative;
-    height: 890px;
-
-    .blocks {
-      position: absolute;
-      left: 5vw;
-      background-color: #EBDCB2;
-      border-radius: 65px;
-      z-index: 0;
-      text-align: right;
-
-      p {
-        color: @mainColor;
-      }
-
-      .textPart {
-        padding: 120px 50px 0 0;
-
-        .headerOfArticle {
-          font-weight: bold;
-          font-size: 24px;
-        }
-
-        .article {
-          padding-top: 21px;
-          font-size: 18px;
-        }
-      }
-
-      .awards {
-        padding: 55px 50px 120px 310px;
-        display: flex;
-        justify-content: space-between;
-
-        p {
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center;
-        }
-
-        .paw {
-          width: 114px;
-          height: 107px;
-          background-color: @secondColor;
-          -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
-          mask: url("assets/icons/paw.svg") no-repeat center;
-        }
-      }
-
-    }
-
-    .photoForBlock {
-      position: absolute;
-      right: 20vw;
-      z-index: 1;
-
-      img {
-        padding-top: 7%;
-        border-radius: 145px;
-        height: 530px;
-      }
-    }
-  }
-
-  .ourGoods {
-    margin-bottom: 169px;
-    position: relative;
-    height: 675px;
-
-    .blocks {
-      position: absolute;
-      background-color: @thirdColor;
-      border-radius: 65px;
-      z-index: 0;
-      text-align: left;
-      padding: 0 35vw 0 0;
-    }
-
-    p {
-      color: @mainColor;
-    }
-
-    .textPart {
-      padding: 120px 0 0 7vw;
-
-      .headerOfArticle {
-        font-weight: bold;
-        font-size: 36px;
-      }
-
-      .article {
-        padding-top: 21px;
-        font-size: 24px;
-      }
-    }
-
-    .awards {
-      padding: 55px 0 120px 7vw;
-
-
-      p {
-        font-size: 24px;
-        font-weight: bold;
-        text-align: start;
-        margin-left: 18%;
-      }
-
-      .dog {
-        width: 114px;
-        height: 107px;
-        background-color: @secondColor;
-        -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
-        mask: url("assets/icons/dog.svg") no-repeat center;
-      }
-
-      .mirror {
-        p {
-          margin-left: 30%;
-        }
-
-        .dog {
-          transform: scale(-1, 1);
-        }
-
-      }
-    }
-
-    .photoForBlock {
-      position: absolute;
-      left: 47vw;
-      z-index: 1;
-
-      img {
-        padding-top: 7%;
-        border-radius: 145px;
-        height: 570px;
-      }
-    }
-  }
-
-  .weAreSelling {
+  .ellipse {
+    height: 300px;
+    width: 65vw;
+    margin-top: 80px;
     background: @thirdColor;
-    border-radius: 115px;
-    margin-top: 173px;
-    margin-bottom: 152px;
+    border-radius: 0 0 100% 0;
+    color: @mainColor;
+    @media (min-width: 768px) {
+      height: 400px;
+      width: 55vw;
+    }
+    @media(min-width: 992px){
+      height: 450px;
+    }
 
-    .goods {
-      .ourGoodsBtn {
-        background: @forthColor;
-        color: @thirdColor;
-        height: 100px;
-        width: 100%;
-        border-radius: 50px;
-        border: none;
-        margin: 80px 0 120px 0;
-        font-size: 36px;
-        font-weight: bold;
+    .firstInfo {
+      margin-left: 10%;
+      @media (min-width: 576px) {
+        margin-left: 14%;
       }
 
-      .headerOfGoods {
-        margin: 120px 0 60px 0;
-        font-size: 64px;
-        font-weight: bold;
-        text-align: center;
-        color: @mainColor;
-      }
-
-      .line {
+      .woof {
         margin-top: 40px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+        font-weight: bold;
+        font-size: 32px;
+        @media (min-width: 576px) {
+          font-size: 40px;
         }
+        @media (min-width: 768px) {
+          font-size: 50px;
+        }
+        @media (min-width: 992px) {
+          margin-top: 75px;
+          font-size: 64px;
+        }
+      }
 
-        .nameOfGood {
-          text-align: center;
-          color: @mainColor;
-          margin-top: 25px;
+      .motto {
+        margin-top: 10px;
+        font-size: 24px;
+        @media (min-width: 576px) {
+          font-size: 30px;
+        }
+        @media (min-width: 768px) {
+          margin-top: 15px;
+          font-size: 35px;
+        }
+        @media (min-width: 992px) {
           font-size: 48px;
         }
+      }
+    }
 
-        .photo {
-          border-radius: 85px;
-        }
+    .buyNow {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      width: 100%;
+      background: @forthColor;
+      border: none;
+      font-weight: bold;
+      color: @thirdColor;
+      padding-bottom: 10px;
+      line-height: 0.81;
+      font-size: 22px;
+      margin-top: 20px;
+      @media (min-width: 576px) {
+        font-size: 30px;
+      }
+      @media (min-width: 768px) {
+        font-size: 30px;
+      }
+      @media (min-width: 992px) {
+        font-size: 36px;
+      }
+    }
+
+
+  }
+}
+
+.ourPartners {
+  background: @mainColor;
+
+  .headerOfPartner {
+    margin: 70px 0 45px 0;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    color: @forthColor;
+  }
+
+  .logos {
+    margin-bottom: 90px;
+
+    .partner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        object-fit: fill;
       }
     }
   }
 }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .header {
-    background: url("assets/headerIMG.jpg") no-repeat;
-    height: 767px;
-    background-size: 100%;
+.aboutUs {
+  //padding: 143px 0 100px 0;
+  padding: 200px 0 100px 0;
+  position: relative;
+  //height: 890px;
 
-    .ellipse {
-      height: 60%;
-      width: 50vw;
-      margin-top: 80px;
-      background: @thirdColor;
-      border-radius: 0 0 100% 0;
-      color: @mainColor;
-
-      .firstInfo {
-        margin-left: 14%;
-      }
-
-      .buyNow {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-        width: 100%;
-        background: @forthColor;
-        border: none;
-        font-size: 36px;
-        font-weight: bold;
-        color: @thirdColor;
-        margin: 30px 0 125px 0;
-        padding-bottom: 10px;
-        line-height: 0.81;
-      }
-
-      .woof {
-        margin-top: 75px;
-        font-weight: bold;
-        font-size: 64px;
-      }
-
-      .motto {
-        margin-top: 15px;
-        font-size: 48px;
-      }
-    }
-  }
-
-  .ourPartners {
-    background: @mainColor;
-
-    .headerOfPartner {
-      margin: 70px 0 45px 0;
-      text-align: center;
-      font-size: 64px;
-      font-weight: bold;
-      color: @forthColor;
-    }
-
-    .logos {
-      margin-bottom: 90px;
-
-      .partner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          object-fit: fill;
-        }
-      }
-    }
-  }
-
-  .aboutUs {
-    padding: 143px 0 100px 0;
-    position: relative;
-    height: 890px;
-
-    .blocks {
-      position: absolute;
+  .blocks {
+    //position: absolute;
+    background-color: #EBDCB2;
+    border-radius: 65px;
+    z-index: 0;
+    text-align: center;
+    //text-align: right;
+    //left: 30vw;
+    @media(min-width: 576px){
       left: 30vw;
-      background-color: #EBDCB2;
-      border-radius: 65px;
-      z-index: 0;
-      text-align: right;
-
-      p {
-        color: @mainColor;
-      }
-
-      .textPart {
-        padding: 120px 50px 0 0;
-
-        .headerOfArticle {
-          font-weight: bold;
-          font-size: 36px;
-        }
-
-        .article {
-          padding-top: 21px;
-          font-size: 24px;
-        }
-      }
-
-      .awards {
-        padding: 55px 50px 120px 310px;
-        display: flex;
-        justify-content: space-between;
-
-        p {
-          font-size: 24px;
-          font-weight: bold;
-          text-align: center;
-        }
-
-        .paw {
-          width: 114px;
-          height: 107px;
-          background-color: @secondColor;
-          -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
-          mask: url("assets/icons/paw.svg") no-repeat center;
-        }
-      }
-
-    }
-
-    .photoForBlock {
-      position: absolute;
-      right: 47vw;
-      z-index: 1;
-
-      img {
-        padding-top: 7%;
-        border-radius: 145px;
-        height: 570px;
-      }
-    }
-  }
-
-  .ourGoods {
-    margin-bottom: 169px;
-    position: relative;
-    height: 675px;
-
-    .blocks {
-      position: absolute;
-      background-color: @thirdColor;
-      border-radius: 65px;
-      z-index: 0;
-      text-align: left;
-      padding: 0 35vw 0 0;
     }
 
     p {
@@ -439,109 +434,191 @@ body {
     }
 
     .textPart {
-      padding: 120px 0 0 7vw;
+      //padding: 120px 50px 0 0;
+      padding: 50px 0 0 0;
 
       .headerOfArticle {
         font-weight: bold;
-        font-size: 36px;
+        //font-size: 36px;
+        font-size: 24px;
       }
 
       .article {
         padding-top: 21px;
-        font-size: 24px;
+        //font-size: 24px;
+        font-size: 14px;
       }
     }
 
     .awards {
-      padding: 55px 0 120px 7vw;
-
+      //padding: 55px 50px 120px 310px;
+      padding: 30px 0 50px 0;
+      display: flex;
+      //justify-content: space-between;
+      justify-content: space-around;
 
       p {
-        font-size: 24px;
+        //font-size: 24px;
+        font-size: 12px;
         font-weight: bold;
-        text-align: start;
-        margin-left: 18%;
+        text-align: center;
       }
 
-      .dog {
-        width: 114px;
-        height: 107px;
+      .paw {
+        //width: 114px;
+        //height: 107px;
+        margin: auto;
+        width: 55px;
+        height: 55px;
         background-color: @secondColor;
-        -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
-        mask: url("assets/icons/dog.svg") no-repeat center;
-      }
-
-      .mirror {
-        p {
-          margin-left: 30%;
-        }
-
-        .dog {
-          transform: scale(-1, 1);
-        }
-
+        -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
+        mask: url("assets/icons/paw.svg") no-repeat center;
       }
     }
 
-    .photoForBlock {
-      position: absolute;
-      left: 47vw;
-      z-index: 1;
+  }
 
-      img {
-        padding-top: 7%;
-        border-radius: 145px;
-        height: 570px;
-      }
+  .photoForBlock {
+    position: absolute;
+    top: 50px;
+    left: 10vw;
+    z-index: 1;
+    @media(min-width:576px){
+      right: 47vw;
+    }
+
+    img {
+      //padding-top: 7%;
+      //border-radius: 145px;
+      //height: 570px;
+      border-radius: 50px;
+      height: 180px;
+      width: 80vw;
+    }
+  }
+}
+
+.ourGoods {
+  margin-bottom: 169px;
+  position: relative;
+  height: 675px;
+
+  .blocks {
+    position: absolute;
+    background-color: @thirdColor;
+    border-radius: 65px;
+    z-index: 0;
+    text-align: left;
+    padding: 0 35vw 0 0;
+  }
+
+  p {
+    color: @mainColor;
+  }
+
+  .textPart {
+    padding: 120px 0 0 7vw;
+
+    .headerOfArticle {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    .article {
+      padding-top: 21px;
+      font-size: 24px;
     }
   }
 
-  .weAreSelling {
-    background: @thirdColor;
-    border-radius: 115px;
-    margin-top: 173px;
-    margin-bottom: 152px;
+  .awards {
+    padding: 55px 0 120px 7vw;
 
-    .goods {
-      .ourGoodsBtn {
-        background: @forthColor;
-        color: @thirdColor;
-        height: 100px;
-        width: 100%;
-        border-radius: 50px;
-        border: none;
-        margin: 80px 0 120px 0;
-        font-size: 36px;
-        font-weight: bold;
+
+    p {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: start;
+      margin-left: 18%;
+    }
+
+    .dog {
+      width: 114px;
+      height: 107px;
+      background-color: @secondColor;
+      -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
+      mask: url("assets/icons/dog.svg") no-repeat center;
+    }
+
+    .mirror {
+      p {
+        margin-left: 30%;
       }
 
-      .headerOfGoods {
-        margin: 120px 0 60px 0;
-        font-size: 64px;
-        font-weight: bold;
+      .dog {
+        transform: scale(-1, 1);
+      }
+
+    }
+  }
+
+  .photoForBlock {
+    position: absolute;
+    left: 47vw;
+    z-index: 1;
+
+    img {
+      padding-top: 7%;
+      border-radius: 145px;
+      height: 570px;
+    }
+  }
+}
+
+.weAreSelling {
+  background: @thirdColor;
+  border-radius: 115px;
+  margin-top: 173px;
+  margin-bottom: 152px;
+
+  .goods {
+    .ourGoodsBtn {
+      background: @forthColor;
+      color: @thirdColor;
+      height: 100px;
+      width: 100%;
+      border-radius: 50px;
+      border: none;
+      margin: 80px 0 120px 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .headerOfGoods {
+      margin: 120px 0 60px 0;
+      font-size: 64px;
+      font-weight: bold;
+      text-align: center;
+      color: @mainColor;
+    }
+
+    .line {
+      margin-top: 40px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .nameOfGood {
         text-align: center;
         color: @mainColor;
+        margin-top: 25px;
+        font-size: 48px;
       }
 
-      .line {
-        margin-top: 40px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-
-        .nameOfGood {
-          text-align: center;
-          color: @mainColor;
-          margin-top: 25px;
-          font-size: 48px;
-        }
-
-        .photo {
-          border-radius: 85px;
-        }
+      .photo {
+        border-radius: 85px;
       }
     }
   }

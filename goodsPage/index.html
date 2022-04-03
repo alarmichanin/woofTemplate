@@ -13,32 +13,34 @@
     <title>Woof</title>
 </head>
 <body>
+
 <div class="navbar">
-    <div class="container">
-        <div class="row nav">
-            <div class="col-2">
-                <img src="../assets/logo.png" alt="logo" class="logo">
-            </div>
-            <div class="col-4 offset-4 row menu">
-                <div class="col-3 aDiv"><a href="../">Home</a></div>
-                <div class="col-3 aDiv"><a href="../aboutPage">About</a></div>
-                <div class="col-3 aDiv"><a href="" class="underline">Our goods</a></div>
-                <div class="col-3 aDiv"><a href="../contactPage">Contact</a></div>
-            </div>
-            <div class="col-1 offset-1 iconsHeader">
-                <div class="row">
-                    <div class="col-4">
-                        <i class="fa-solid fa-mobile mobile"></i>
-                    </div>
-                    <div class="col-6">
-                        <i class="fa-solid fa-cart-shopping cart"></i>
-                    </div>
+    <div class="row nav">
+        <div class="offset-1 col-6 col-sm-8 offset-md-1 col-md-2">
+            <a href="../"><img src="../assets/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="col-md-5 offset-md-3 col-lg-4 offset-lg-3 row menu">
+            <div class="col-3 aDiv"><a href="../">Home</a></div>
+            <div class="col-3 aDiv"><a href="../aboutPage">About</a></div>
+            <div class="col-3 aDiv"><a href="" class="underline">Our goods</a></div>
+            <div class="col-3 aDiv"><a href="../contactPage">Contact</a></div>
+        </div>
+        <div class="col-4 col-sm-3 col-md-1 col-lg-1 offset-lg-1 iconsHeader">
+            <div class="row">
+                <div class="col-4 col-md-6 phoneI">
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                <div class="col-4 col-md-6 cartI">
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                </div>
+                <div class="col-4 barI">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</div>
+
 
 <div class="container search">
     <div class="row">
@@ -376,9 +378,9 @@
     </div>
 </div>
 <div class="footer">
-    <div class="container">
+    <div class="container-md">
         <div class="row">
-            <div class="col-5">
+            <div class="offset-1 col-10 offset-sm-1 col-sm-10 offset-md-0">
                 <p class="headerOfFooter">Let’s start your shoping!</p>
                 <p class="schedule">Every day from 10 am to 6 pm</p>
                 <p class="detail">Contact detail<br>
@@ -387,13 +389,23 @@
                     Yangelya 1<br>
                     Kyiv, Ukraine</p>
             </div>
-            <div class="col-5 offset-2 footerPaw">
-                <i class="fa-solid fa-paw paw child"></i>
-                <i class="fa-brands fa-instagram child socialNet inst"></i>
-                <i class="fa-brands fa-facebook child socialNet face"></i>
-                <i class="fa-brands fa-telegram child socialNet tel"></i>
-                <i class="fa-brands fa-whatsapp child socialNet whats"></i>
-                <p class="madeBy child">Made by Roman <br>Tkachenko</p>
+            <div class="col-12 col-sm-1 offset-sm-1">
+                <div class="footerPaw">
+                    <div class="row ">
+                        <div class="socials">
+                            <div class="col-3"><i class="fa-brands fa-instagram child socialNet inst"></i></div>
+                            <div class="col-3"><i class="fa-brands fa-facebook child socialNet face"></i></div>
+                            <div class="col-3"><i class="fa-brands fa-telegram child socialNet tel"></i></div>
+                            <div class="col-3"><i class="fa-brands fa-whatsapp child socialNet whats"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mainPaw">
+                            <i class="fa-solid fa-paw paw"></i>
+                        </div>
+                    </div>
+                    <p class="madeBy child">Made by Roman <br>Tkachenko</p>
+                </div>
             </div>
         </div>
     </div>

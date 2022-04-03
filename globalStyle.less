@@ -5,18 +5,28 @@
 @thirdColor: #EBDCB2;
 @forthColor: #FF922D;
 
+@xlPawSize: calc(415px + 1vw);
+@lgPawSize: calc(360px + 1vw);
+@mdPawSize: calc(305px + 1vw);
+@smPawSize: calc(250px + 1vw);
+@pawSize: calc(195px + 1vw);
+
+@madeByTop:140px;
+@madeByTopSM:@madeByTop+40px;
+@madeByTopMD:@madeByTopSM+40px;
+@madeByTopLG:@madeByTopMD+40px;
+@madeByTopXL:@madeByTopLG+40px;
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -40,7 +50,7 @@ html, body {
     height: 80px;
 
     .logo {
-      width: 50%;
+      width: 90px;
       margin-top: 10px;
     }
 
@@ -53,10 +63,16 @@ html, body {
         height: 30px;
 
         a {
-          font-size: 14px;
+          font-size: 13.3px;
           color: @thirdColor;
           text-decoration: none;
           position: relative;
+          @media (min-width: 992px) {
+            font-size: 14px;
+          }
+          @media (min-width: 1200px) {
+            font-size: 16px;
+          }
         }
 
         .underline:after {
@@ -72,113 +88,262 @@ html, body {
           background: @forthColor;
         }
       }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
     }
+
 
     .iconsHeader {
       height: 80px;
       display: flex;
       align-items: center;
+      justify-content: flex-start;
+      margin-right: auto;
       color: @thirdColor;
       flex-wrap: nowrap;
-      font-size: 5px;
-
-      .cart {
-        justify-content: start;
+      font-size: 20px;
+      @media (min-width: 320px) {
+        justify-content: flex-end;
       }
       @media (min-width: 576px) {
-        font-size: 10px;
+        justify-content: flex-start;
+        font-size: 25px;
       }
 
       // Medium devices (tablets, 768px and up)
       @media (min-width: 768px) {
-        font-size: 15px;
+        font-size: 20px;
+        margin-left: -10px;
+        .barI {
+          display: none;
+        }
       }
 
       // Large devices (desktops, 992px and up)
       @media (min-width: 992px) {
-        font-size: 20px;
-      }
-
-      // X-Large devices (large desktops, 1200px and up)
-      @media (min-width: 1200px) {
         font-size: 25px;
-      }
-
-      // XX-Large devices (larger desktops, 1400px and up)
-      @media (min-width: 1400px) {
-        font-size: 25px;
+        margin-left: -1px;
       }
     }
   }
 }
 
+
 .footer {
-  height: 618px;
   background: @mainColor;
   color: @thirdColor;
+  position: relative;
+  height: 400px;
+  @media (min-width: 576px) {
+    height: 550px;
+  }
+  @media (min-width: 992px) {
+    height: 600px;
+  }
+  @media (min-width: 1200px) {
+    height: 700px;
+  }
 
   .headerOfFooter {
-    margin-top: 105px;
-    font-size: 36px;
+    margin-top: 30px;
+    font-size: 16px;
     font-weight: bold;
+    @media (min-width: 576px) {
+      margin-top: 105px;
+      font-size: 25px;
+    }
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media (min-width: 992px) {
+      font-size: 36px;
+    }
   }
 
   .schedule {
-    margin-top: 30px;
-    font-size: 24px;
+    margin-top: 10px;
+    font-size: 16px;
+    @media (min-width: 576px) {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media (min-width: 992px) {
+      font-size: 24px;
+    }
   }
 
   .detail {
-    margin-top: 60px;
-    font-size: 24px;
+    margin-top: 20px;
+    font-size: 14px;
     line-height: 2;
+    @media (min-width: 576px) {
+      margin-top: 60px;
+      font-size: 20px;
+    }
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media (min-width: 992px) {
+      font-size: 24px;
+    }
   }
 
   .footerPaw {
-    margin-top: 130px;
-    position: relative;
-    height: 400px;
+    position: absolute;
+    top: 180px;
+    left: 35vw;
+    @media (min-width: 576px) {
+      top: 165px;
+      left: 55vw;
+    }
+
 
     .child {
       position: absolute;
     }
 
+
     .paw {
-      top: 0;
-      font-size: 400px;
+      font-size: @pawSize;
+      @media (min-width: 576px) {
+        font-size: @smPawSize;
+      }
+      @media (min-width: 768px) {
+        font-size: @mdPawSize;
+      }
+      @media (min-width: 992px) {
+        font-size: @lgPawSize;
+      }
+      @media (min-width: 1200px) {
+        font-size: @xlPawSize;
+      }
     }
 
     .socialNet {
-      font-size: 70px;
       color: black;
+      font-size: calc(@pawSize / 5.3);
+      @media (min-width: 576px) {
+        font-size: calc(@smPawSize / 5.3);
+      }
+      @media (min-width: 768px) {
+        font-size: calc(@mdPawSize / 5.3);
+      }
+      @media (min-width: 992px) {
+        font-size: calc(@lgPawSize / 5.3);
+      }
+      @media (min-width: 1200px) {
+        font-size: calc(@xlPawSize / 5.3);
+      }
     }
 
     .inst {
-      top: 35%;
-      left: 5%;
+      top: 70px;
+      left: calc(@pawSize / 25);
+      @media (min-width: 576px) {
+        top: 90px;
+        left: calc(@smPawSize / 25);
+      }
+      @media (min-width: 768px) {
+        top: 110px;
+        left: calc(@mdPawSize / 25);
+      }
+      @media (min-width: 992px) {
+        top: 130px;
+        left: calc(@lgPawSize / 25);
+      }
+      @media (min-width: 1200px) {
+        top: 150px;
+        left: calc(@xlPawSize / 25);
+      }
     }
 
     .tel {
-      top: 15%;
-      left: 51%;
+      top: 30px;
+      left: calc(@pawSize / 1.75);
+      @media (min-width: 576px) {
+        left: calc(@smPawSize / 1.75);
+      }
+      @media (min-width: 768px) {
+        top: 40px;
+        left: calc(@mdPawSize / 1.75);
+      }
+      @media (min-width: 992px) {
+        left: calc(@lgPawSize / 1.75);
+      }
+      @media (min-width: 1200px) {
+        top: 50px;
+        left: calc(@xlPawSize / 1.75);
+      }
     }
 
     .face {
-      top: 15%;
-      left: 24%;
+      top: 30px;
+      left: calc(@pawSize / 3.97);
+      @media (min-width: 576px) {
+        left: calc(@smPawSize / 3.97);
+      }
+      @media (min-width: 768px) {
+        top: 40px;
+        left: calc(@mdPawSize / 3.97);
+      }
+      @media (min-width: 992px) {
+        left: calc(@lgPawSize / 3.97);
+      }
+      @media (min-width: 1200px) {
+        top: 50px;
+        left: calc(@xlPawSize / 3.97);
+      }
     }
 
     .whats {
-      top: 35%;
-      left: 71%;
+      top: 70px;
+      left: calc(@pawSize / 1.22);
+      @media (min-width: 576px) {
+        top: 90px;
+        left: calc(@smPawSize / 1.22);
+      }
+      @media (min-width: 768px) {
+        top: 110px;
+        left: calc(@mdPawSize / 1.22);
+      }
+      @media (min-width: 992px) {
+        top: 130px;
+        left: calc(@lgPawSize / 1.22);
+      }
+      @media (min-width: 1200px) {
+        top: 150px;
+        left: calc(@xlPawSize / 1.22);
+      }
     }
 
     .madeBy {
-      top: 75%;
-      left: 32%;
+      top: @madeByTop;
       text-align: center;
       color: black;
+      left: calc(@pawSize / 5);
+      @media (min-width: 576px) {
+        top: @madeByTopSM;
+        left: calc(@smPawSize / 3.7);
+      }
+      @media (min-width: 768px) {
+        top: @madeByTopMD;
+        left: calc(@mdPawSize / 3.3);
+      }
+      @media (min-width: 992px) {
+        top: @madeByTopLG;
+        left: calc(@lgPawSize / 3.2);
+        font-size: 20px;
+      }
+      @media (min-width: 1200px) {
+        top: @madeByTopXL;
+        left: calc(@xlPawSize / 3.1);
+      }
     }
   }
-
 }
