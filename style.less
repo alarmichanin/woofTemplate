@@ -294,14 +294,11 @@ body {
     background-position-x: 47%;
   }
   @media (min-width: 992px) {
-    background-size: 100%;
-    //height: 75vh;
+    height: 767px;
   }
   @media (min-width: 1200px) {
-    height: 800px;
-  }
-  @media (min-width: 1400px) {
-    height: 1000px;
+    background-size: 100%;
+    height: 60vw;
   }
 
   .ellipse {
@@ -315,7 +312,7 @@ body {
       height: 400px;
       width: 55vw;
     }
-    @media(min-width: 992px){
+    @media (min-width: 992px) {
       height: 450px;
     }
 
@@ -380,8 +377,6 @@ body {
         font-size: 36px;
       }
     }
-
-
   }
 }
 
@@ -412,21 +407,31 @@ body {
 }
 
 .aboutUs {
-  //padding: 143px 0 100px 0;
-  padding: 200px 0 100px 0;
+  padding: 250px 0 100px 0;
   position: relative;
-  //height: 890px;
+  @media (min-width: 768px) {
+    height: 890px;
+    padding-top: 143px;
+  }
+  @media (min-width: 992px) {
+    padding-top: 185px;
+  }
+  @media (min-width: 1200px) {
+    height: 80vw;
+  }
 
   .blocks {
-    //position: absolute;
     background-color: #EBDCB2;
     border-radius: 65px;
     z-index: 0;
     text-align: center;
-    //text-align: right;
-    //left: 30vw;
-    @media(min-width: 576px){
-      left: 30vw;
+    @media (min-width: 768px) {
+      position: absolute;
+      text-align: right;
+      left: 10vw;
+    }
+    @media (min-width: 992px) {
+      left: 22vw;
     }
 
     p {
@@ -434,45 +439,105 @@ body {
     }
 
     .textPart {
-      //padding: 120px 50px 0 0;
-      padding: 50px 0 0 0;
+      padding-top: 100px;
+      @media (min-width: 576px) {
+        padding-top: 150px;
+      }
+      @media (min-width: 768px) {
+        padding: 120px 40px 0 0;
+      }
+      @media (min-width: 992px) {
+        padding-left: 30vw;
+      }
 
       .headerOfArticle {
         font-weight: bold;
-        //font-size: 36px;
         font-size: 24px;
+        @media (min-width: 576px) {
+          font-size: 30px;
+        }
+        @media (min-width: 768px) {
+          font-size: 32px;
+        }
+        @media (min-width: 992px) {
+          font-size: 36px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 3.5vw;
+        }
       }
 
       .article {
         padding-top: 21px;
-        //font-size: 24px;
         font-size: 14px;
+        @media (min-width: 576px) {
+          font-size: 20px;
+        }
+        @media (min-width: 768px) {
+          font-size: 22px;
+        }
+        @media (min-width: 992px) {
+          font-size: 24px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 2.5vw;
+        }
       }
     }
 
     .awards {
-      //padding: 55px 50px 120px 310px;
       padding: 30px 0 50px 0;
       display: flex;
-      //justify-content: space-between;
       justify-content: space-around;
+      @media (min-width: 768px) {
+        padding: 55px 3vw 90px 35vw;
+        justify-content: space-between;
+      }
+      @media (min-width: 992px) {
+        padding: 55px 50px 120px 30vw;
+      }
+      @media (min-width: 1200px) {
+        padding-bottom: 12.5vw;
+      }
+
 
       p {
-        //font-size: 24px;
         font-size: 12px;
         font-weight: bold;
         text-align: center;
+        @media (min-width: 576px) {
+          font-size: 16px;
+        }
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 24px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 2.5vw;
+        }
       }
 
       .paw {
-        //width: 114px;
-        //height: 107px;
         margin: auto;
-        width: 55px;
-        height: 55px;
         background-color: @secondColor;
         -webkit-mask: url("assets/icons/paw.svg") no-repeat center;
         mask: url("assets/icons/paw.svg") no-repeat center;
+        width: 55px;
+        height: 55px;
+        @media (min-width: 576px) {
+          width: 80px;
+          height: 80px;
+        }
+        @media (min-width: 768px) {
+          width: 114px;
+          height: 107px;
+        }
+        @media (min-width: 1200px) {
+          width: 11.5vw;
+          height: 11.5vw;
+        }
       }
     }
 
@@ -480,36 +545,73 @@ body {
 
   .photoForBlock {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 10vw;
     z-index: 1;
-    @media(min-width:576px){
-      right: 47vw;
+    @media (min-width: 768px) {
+      top: 200px;
+      left: 2vw;
+    }
+    @media (min-width: 992px) {
+      top: 200px;
+      left: -15vw;
     }
 
     img {
-      //padding-top: 7%;
-      //border-radius: 145px;
-      //height: 570px;
       border-radius: 50px;
-      height: 180px;
+      height: 220px;
       width: 80vw;
+      @media (min-width: 576px) {
+        height: 280px;
+      }
+      @media (min-width: 768px) {
+        border-radius: 100%;
+        height: 45vw;
+        width: 45vw;
+      }
+      @media (min-width: 992px) {
+        padding-top: 7%;
+        border-radius: 145px;
+        height: 570px;
+        width: 65vw;
+      }
+      @media (min-width: 1200px) {
+        height: 45vw;
+      }
     }
   }
 }
 
 .ourGoods {
-  margin-bottom: 169px;
+  margin: 0 0 120px 0;
   position: relative;
-  height: 675px;
+  @media (min-width: 768px) {
+    height: 675px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 100px;
+    margin-bottom: 169px;
+  }
+  @media (min-width: 992px) {
+    height: 54vw;
+  }
+
 
   .blocks {
-    position: absolute;
     background-color: @thirdColor;
     border-radius: 65px;
     z-index: 0;
-    text-align: left;
-    padding: 0 35vw 0 0;
+    text-align: center;
+    margin-top: 180px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+      position: absolute;
+      text-align: left;
+      right: 15vw;
+    }
+    @media (min-width: 768px) {
+      right: 20vw;
+    }
   }
 
   p {
@@ -517,36 +619,83 @@ body {
   }
 
   .textPart {
-    padding: 120px 0 0 7vw;
+    padding-top: 100px;
+    @media (min-width: 576px) {
+      padding-top: 150px;
+    }
+    @media (min-width: 768px) {
+      padding: 120px 28vw 0 7vw;
+    }
+    @media (min-width: 992px) {
+      padding: 120px 33vw 0 7vw;
+    }
 
     .headerOfArticle {
       font-weight: bold;
-      font-size: 36px;
+      font-size: 24px;
+      @media (min-width: 576px) {
+        font-size: 30px;
+      }
+      @media (min-width: 768px) {
+        font-size: 32px;
+      }
+      @media (min-width: 992px) {
+        font-size: 36px;
+      }
     }
 
     .article {
       padding-top: 21px;
-      font-size: 24px;
+      font-size: 14px;
+      @media (min-width: 576px) {
+        font-size: 20px;
+      }
+      @media (min-width: 768px) {
+        font-size: 22px;
+      }
+      @media (min-width: 992px) {
+        font-size: 24px;
+      }
     }
   }
 
   .awards {
-    padding: 55px 0 120px 7vw;
+    padding: 30px 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    @media (min-width: 768px) {
+      padding: 55px 44vw 70px 7vw;
+      margin-right: -100px;
+    }
 
 
     p {
-      font-size: 24px;
+      font-size: 12px;
       font-weight: bold;
-      text-align: start;
-      margin-left: 18%;
+      text-align: center;
+      @media (min-width: 576px) {
+        font-size: 18px;
+      }
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
     }
 
     .dog {
-      width: 114px;
-      height: 107px;
+      margin: auto;
       background-color: @secondColor;
       -webkit-mask: url("assets/icons/dog.svg") no-repeat center;
       mask: url("assets/icons/dog.svg") no-repeat center;
+      width: 100px;
+      height: 100px;
+      @media (min-width: 576px) {
+        width: 115px;
+        height: 115px;
+      }
+      @media (min-width: 1200px) {
+        width: 140px;
+        height: 140px;
+      }
     }
 
     .mirror {
@@ -563,13 +712,36 @@ body {
 
   .photoForBlock {
     position: absolute;
-    left: 47vw;
+    top: 0;
+    left: 10vw;
     z-index: 1;
+    @media (min-width: 768px) {
+      top: 50px;
+      left: 53vw;
+    }
+    @media (min-width: 992px) {
+      top: 0;
+      left: 50vw;
+    }
 
     img {
-      padding-top: 7%;
-      border-radius: 145px;
-      height: 570px;
+      border-radius: 50px;
+      height: 220px;
+      width: 80vw;
+      @media (min-width: 576px) {
+        height: 280px;
+      }
+      @media (min-width: 768px) {
+        border-radius: 100%;
+        height: 45vw;
+        width: 45vw;
+      }
+      @media (min-width: 992px) {
+        padding-top: 7%;
+        border-radius: 145px;
+        height: 570px;
+        width: 65vw;
+      }
     }
   }
 }
@@ -623,13 +795,3 @@ body {
     }
   }
 }
-
-// X-Large devices (large desktops, 1200px and up)
-//@media (min-width: 1200px) {
-
-//}
-
-// XX-Large devices (larger desktops, 1400px and up)
-//@media (min-width: 1400px) {
-//
-//}
