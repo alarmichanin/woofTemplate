@@ -74,7 +74,7 @@ body {
 }
 @media (min-width: 992px) {
   .header .ellipse .firstInfo .woof {
-    margin-top: 75px;
+    margin-top: 20px;
     font-size: 64px;
   }
 }
@@ -163,7 +163,7 @@ body {
     padding-top: 185px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs {
     height: 80vw;
   }
@@ -226,7 +226,7 @@ body {
     font-size: 36px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .blocks .textPart .headerOfArticle {
     font-size: 3.5vw;
   }
@@ -250,7 +250,7 @@ body {
     font-size: 24px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .blocks .textPart .article {
     font-size: 2.5vw;
   }
@@ -271,7 +271,7 @@ body {
     padding: 55px 50px 120px 30vw;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .blocks .awards {
     padding-bottom: 12.5vw;
   }
@@ -296,7 +296,7 @@ body {
     font-size: 24px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .blocks .awards p {
     font-size: 2.5vw;
   }
@@ -321,7 +321,7 @@ body {
     height: 107px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .blocks .awards .paw {
     width: 11.5vw;
     height: 11.5vw;
@@ -370,7 +370,7 @@ body {
     width: 65vw;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .aboutUs .photoForBlock img {
     height: 45vw;
   }
@@ -390,9 +390,14 @@ body {
     margin-bottom: 169px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .ourGoods {
-    height: 54vw;
+    height: 60vw;
+  }
+}
+@media (min-width: 1400px) {
+  .ourGoods {
+    height: 70vw;
   }
 }
 .ourGoods .blocks {
@@ -407,11 +412,6 @@ body {
     margin-top: 0;
     position: absolute;
     text-align: left;
-    right: 15vw;
-  }
-}
-@media (min-width: 768px) {
-  .ourGoods .blocks {
     right: 20vw;
   }
 }
@@ -455,6 +455,11 @@ body {
     font-size: 36px;
   }
 }
+@media (min-width: 1400px) {
+  .ourGoods .textPart .headerOfArticle {
+    font-size: 3.5vw;
+  }
+}
 .ourGoods .textPart .article {
   padding-top: 21px;
   font-size: 14px;
@@ -474,6 +479,11 @@ body {
     font-size: 24px;
   }
 }
+@media (min-width: 1400px) {
+  .ourGoods .textPart .article {
+    font-size: 2.5vw;
+  }
+}
 .ourGoods .awards {
   padding: 30px 30px 50px;
   display: flex;
@@ -483,6 +493,11 @@ body {
   .ourGoods .awards {
     padding: 55px 44vw 70px 7vw;
     margin-right: -100px;
+  }
+}
+@media (min-width: 1400px) {
+  .ourGoods .awards {
+    padding-bottom: 12.5vw;
   }
 }
 .ourGoods .awards p {
@@ -498,6 +513,16 @@ body {
 @media (min-width: 768px) {
   .ourGoods .awards p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .ourGoods .awards p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .ourGoods .awards p {
+    font-size: 2.5vw;
   }
 }
 .ourGoods .awards .dog {
@@ -518,6 +543,12 @@ body {
   .ourGoods .awards .dog {
     width: 140px;
     height: 140px;
+  }
+}
+@media (min-width: 1400px) {
+  .ourGoods .awards .dog {
+    width: 11.5vw;
+    height: 11.5vw;
   }
 }
 .ourGoods .awards .mirror p {
