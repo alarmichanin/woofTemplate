@@ -416,6 +416,10 @@ body {
   border-radius: 100%;
   height: 50px;
   width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
 }
 @media (min-width: 768px) {
   .mainContent .customersReviews .reviews .userPhoto {
@@ -423,14 +427,30 @@ body {
     width: 75px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .mainContent .customersReviews .reviews .userPhoto {
+    margin-left: 20%;
     height: 85px;
     width: 85px;
   }
 }
 .mainContent .customersReviews .reviews .userPhoto img {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .mainContent .customersReviews .reviews .userPhoto img {
+    height: 75px;
+    width: 75px;
+  }
+}
+@media (min-width: 992px) {
+  .mainContent .customersReviews .reviews .userPhoto img {
+    height: 85px;
+    width: 85px;
+  }
 }
 .mainContent .customersReviews .reviews .name,
 .mainContent .customersReviews .reviews .commentText {
