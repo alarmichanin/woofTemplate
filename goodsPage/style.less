@@ -42,15 +42,18 @@ body {
     }
   }
 }
-.filter{
-  color:@thirdColor;
+
+.filter {
+  color: @thirdColor;
   font-size: 26px;
 }
-.sorting+i{
-  @media(min-width: 992px){
+
+.sorting + i {
+  @media (min-width: 992px) {
     display: none;
   }
 }
+
 .categories {
   display: none;
   @media (min-width: 992px) {
@@ -93,11 +96,16 @@ body {
   border-radius: 35px;
 
   .popularGoods {
-    background-color: @thirdColor;
-    margin-top: 60px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+      background-color: @thirdColor;
+      margin-top: 60px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
 
     ::-webkit-scrollbar {
       display: block;
@@ -161,6 +169,12 @@ body {
   }
 
   .lineOfGoods {
+    @media (max-width: 768px) {
+      &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+        display: none;
+      }
+    }
+
     &:not(:first-child) {
       margin-top: 5px;
     }
@@ -169,9 +183,6 @@ body {
       margin-top: 50px;
     }
 
-    &:last-child {
-      margin-bottom: 85px;
-    }
 
     .cards {
       display: flex;
@@ -179,11 +190,14 @@ body {
       .card {
         background-color: @thirdColor;
         border-radius: 20px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         color: @mainColor;
         display: flex;
         justify-content: center;
+        @media (min-width: 576px) {
+          font-size: 14px;
+        }
 
         .content {
           width: 60%;
@@ -216,7 +230,11 @@ body {
             justify-content: center;
             font-weight: normal;
             height: 70px;
-            margin-top: 10px;
+            margin-top: 5px;
+            font-size: 10px;
+            @media(min-width: 576px){
+              font-size: 12px;
+            }
           }
 
           .lastLine {
@@ -237,7 +255,7 @@ body {
   }
 
   .pagination {
-    margin-bottom: 80px;
+    margin: 85px 0 80px 0;
 
     .start {
       display: flex;

@@ -81,11 +81,17 @@ body {
   border-radius: 35px;
 }
 .generalContainer .popularGoods {
-  background-color: #EBDCB2;
-  margin-top: 60px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: bold;
+  display: none;
+}
+@media (min-width: 992px) {
+  .generalContainer .popularGoods {
+    display: block;
+    background-color: #EBDCB2;
+    margin-top: 60px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
 .generalContainer .popularGoods ::-webkit-scrollbar {
   display: block;
@@ -136,14 +142,18 @@ body {
   background-color: #EBDCB2;
   color: #662E1C;
 }
+@media (max-width: 768px) {
+  .generalContainer .lineOfGoods:nth-child(4),
+  .generalContainer .lineOfGoods:nth-child(5),
+  .generalContainer .lineOfGoods:nth-child(6) {
+    display: none;
+  }
+}
 .generalContainer .lineOfGoods:not(:first-child) {
   margin-top: 5px;
 }
 .generalContainer .lineOfGoods:first-child {
   margin-top: 50px;
-}
-.generalContainer .lineOfGoods:last-child {
-  margin-bottom: 85px;
 }
 .generalContainer .lineOfGoods .cards {
   display: flex;
@@ -151,11 +161,16 @@ body {
 .generalContainer .lineOfGoods .cards .card {
   background-color: #EBDCB2;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #662E1C;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 576px) {
+  .generalContainer .lineOfGoods .cards .card {
+    font-size: 14px;
+  }
 }
 .generalContainer .lineOfGoods .cards .card .content {
   width: 60%;
@@ -185,7 +200,13 @@ body {
   justify-content: center;
   font-weight: normal;
   height: 70px;
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+@media (min-width: 576px) {
+  .generalContainer .lineOfGoods .cards .card .content .shortDesc {
+    font-size: 12px;
+  }
 }
 .generalContainer .lineOfGoods .cards .card .content .lastLine {
   margin: 15px 0 25px 0;
@@ -198,7 +219,7 @@ body {
   font-size: 25px;
 }
 .generalContainer .pagination {
-  margin-bottom: 80px;
+  margin: 85px 0 80px 0;
 }
 .generalContainer .pagination .start {
   display: flex;
