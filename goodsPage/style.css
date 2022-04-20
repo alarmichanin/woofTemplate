@@ -185,6 +185,14 @@ body {
 .generalContainer .pagination {
   margin-bottom: 80px;
 }
+.generalContainer .pagination .start {
+  display: flex;
+  justify-content: flex-start;
+}
+.generalContainer .pagination .end {
+  display: flex;
+  justify-content: flex-end;
+}
 .generalContainer .pagination .circle {
   height: 45px;
   width: 45px;
