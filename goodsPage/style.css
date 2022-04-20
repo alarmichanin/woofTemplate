@@ -33,12 +33,27 @@ body {
   color: #662E1C;
   background-color: #EBDCB2;
 }
+.filter {
+  color: #EBDCB2;
+  font-size: 26px;
+}
+@media (min-width: 992px) {
+  .sorting + i {
+    display: none;
+  }
+}
 .categories {
-  height: 770px;
-  background-color: #662E1C;
-  margin-top: 70px;
-  border-radius: 40px;
-  padding: 0 30px;
+  display: none;
+}
+@media (min-width: 992px) {
+  .categories {
+    display: block;
+    height: 770px;
+    background-color: #662E1C;
+    margin-top: 70px;
+    border-radius: 40px;
+    padding: 0 30px;
+  }
 }
 .categories .category {
   height: 45px;
@@ -73,7 +88,7 @@ body {
   font-weight: bold;
 }
 .generalContainer .popularGoods ::-webkit-scrollbar {
-  display: block ;
+  display: block;
 }
 .generalContainer .popularGoods ::-webkit-scrollbar-thumb {
   background: #662E1C;
