@@ -200,16 +200,36 @@ body {
         }
 
         .content {
-          width: 60%;
+          width: 70%;
+          @media(min-width: 576px){
+            width: 60%;
+          }
+          @media(min-width: 768px){
+            width: 70%;
+          }
+          @media(min-width: 992px){
+            width: 65%;
+          }
 
           .photo {
-            height: 110px;
-            min-width: 110px;
+            height: 20vw;
+            min-width: 15vw;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: black;
             margin-top: 30px;
+            @media(min-width: 576px){
+              height: 110px;
+              min-width: 110px;
+            }
+            @media(min-width: 768px){
+              height: 10vw;
+              min-width: 5vw;
+            }
+            @media(min-width: 1200px){
+              height: 110px;
+              min-width: 110px;
+            }
 
             img {
               height: 100%;
@@ -231,21 +251,29 @@ body {
             font-weight: normal;
             height: 70px;
             margin-top: 5px;
-            font-size: 10px;
-            @media(min-width: 576px){
-              font-size: 12px;
-            }
+            font-size: 12px;
           }
 
           .lastLine {
             margin: 15px 0 25px 0;
-
+            .price{
+              font-size: 10px;
+              @media(min-width: 576px){
+                font-size: 12px;
+              }
+            }
             .buy {
               display: flex;
               align-items: center;
               justify-content: flex-end;
               color: @forthColor;
-              font-size: 25px;
+              font-size: 4vw;
+              @media(min-width: 576px){
+                font-size: 25px;
+              }
+              @media(min-width: 768px){
+                font-size: 20px;
+              }
             }
           }
         }
