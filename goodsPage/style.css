@@ -142,6 +142,37 @@ body {
   background-color: #EBDCB2;
   color: #662E1C;
 }
+.generalContainer .sorting i {
+  display: flex;
+  justify-content: flex-end;
+}
+.generalContainer .sorting select {
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  padding-left: 15px;
+  background-color: #EBDCB2;
+  color: #662E1C;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 12px;
+}
+@media (min-width: 776px) {
+  .generalContainer .sorting select {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .generalContainer .sorting select {
+    font-size: 16px;
+  }
+}
+.generalContainer .sorting select:checked {
+  border: 0;
+}
 @media (max-width: 768px) {
   .generalContainer .lineOfGoods:nth-child(4),
   .generalContainer .lineOfGoods:nth-child(5),
