@@ -123,6 +123,7 @@ body {
   min-width: 100px;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 15px 0 35px 0;
   color: #662E1C;
 }
@@ -205,7 +206,7 @@ body {
 }
 @media (min-width: 576px) {
   .lineOfGoods .cards .card .content {
-    width: 60%;
+    width: 62%;
   }
 }
 @media (min-width: 768px) {
@@ -215,7 +216,7 @@ body {
 }
 @media (min-width: 992px) {
   .lineOfGoods .cards .card .content {
-    width: 65%;
+    width: 70%;
   }
 }
 .lineOfGoods .cards .card .content .photo {
@@ -252,6 +253,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-top: 10px;
 }
 .lineOfGoods .cards .card .content .shortDesc {
@@ -261,7 +263,12 @@ body {
   font-weight: normal;
   height: 70px;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 10px;
+}
+@media (min-width: 576px) {
+  .lineOfGoods .cards .card .content .shortDesc {
+    font-size: 12px;
+  }
 }
 .lineOfGoods .cards .card .content .lastLine {
   margin: 15px 0 25px 0;
