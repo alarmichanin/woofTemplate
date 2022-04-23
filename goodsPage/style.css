@@ -128,8 +128,14 @@ body {
   color: #662E1C;
 }
 .generalContainer .sortBlock .filter {
-  position: absolute;
-  top: 100px;
+  color: #ebdcb2;
+  padding-top: 65px;
+  font-size: 20px;
+}
+@media (min-width: 992px) {
+  .generalContainer .sortBlock .filter {
+    display: none;
+  }
 }
 .generalContainer .sortBlock .sorting {
   margin-top: 55px;
@@ -137,6 +143,11 @@ body {
   height: 35px;
   background-color: #ebdcb2;
   color: #662E1C;
+}
+@media (min-width: 992px) {
+  .generalContainer .sortBlock .sorting {
+    display: flex;
+  }
 }
 .generalContainer .sortBlock .sorting select {
   height: 35px;

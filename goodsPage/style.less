@@ -152,10 +152,17 @@ body {
 
   .sortBlock {
     .filter{
-      position: absolute;
-      top: 100px;
+      color: @thirdColor;
+      padding-top: 65px;
+      font-size: 20px;
+      @media(min-width: 992px){
+        display:none;
+      }
     }
     .sorting {
+      @media(min-width: 992px){
+        display: flex;
+      }
       margin-top: 55px;
       border-radius: 10px;
       height: 35px;
