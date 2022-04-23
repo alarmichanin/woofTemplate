@@ -66,6 +66,10 @@ body {
 .categories .category:last-child {
   margin-bottom: 60px;
 }
+.categories .category:hover {
+  background-color: #AF4425;
+  color: #ebdcb2;
+}
 .generalContainer {
   margin: 70px 0 160px 0;
   background-color: rgba(255, 146, 45, 0.6);
